@@ -1,6 +1,6 @@
 {
   "name": "miniprogram-api-promise",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extend WeChat miniprogram's api to surport promise",
   "main": "src/index.js",
   "scripts": {

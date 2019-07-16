@@ -10,7 +10,7 @@ function hasCallback(args) {
   return false
 }
 
-export function promisify(func) {
+function _promisify(func) {
   if (typeof func !== 'function') return fn
   return (args = {}) =>
     new Promise((resolve, reject) => {
@@ -31,7 +31,7 @@ export function promisifyAll(wx = {}, wxp = {}) {
         if (hasCallback(args)) {
           fn(args)
         } else {
-          return promisify(fn)(args)
+          return _promisify(fn)(args)
         }
       }
     } else {
@@ -39,3 +39,5 @@ export function promisifyAll(wx = {}, wxp = {}) {
     }
   })
 }
+
+export const promisify = _promisify
