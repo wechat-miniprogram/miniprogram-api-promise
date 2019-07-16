@@ -1,7 +1,7 @@
 # miniprogram-api-promise
 
 [![](https://img.shields.io/npm/v/miniprogram-api-promise.svg?style=flat)](https://www.npmjs.com/package/miniprogram-api-promise)
-[![](https://img.shields.io/github/license/wechat-miniprogram/api-promise.svg)](https://github.com/wechat-miniprogram/miniprogram-api-promise)
+[![](https://img.shields.io/github/license/wechat-miniprogram/api-typings.svg)](https://github.com/wechat-miniprogram/miniprogram-api-promise)
 
 Extend WeChat miniprogram's api to surport promise. Please refer to the miniprogram official 🔗 [documentation](https://developers.weixin.qq.com/miniprogram/dev/api/) for more information.
 
