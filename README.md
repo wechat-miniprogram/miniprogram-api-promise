@@ -21,6 +21,8 @@ promisifyAll(wx, wxp)
 wxp.getSystemInfoSync()
 wxp.getSystemInfo().then(console.log)
 wxp.showModal().then(wxp.openSetting())
+
+// compatible usage
 wxp.getSystemInfo({success(res) {console.log(res)}})
 
 // promisify single api
