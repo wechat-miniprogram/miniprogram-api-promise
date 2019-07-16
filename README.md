@@ -21,7 +21,7 @@ import { promisifyAll, promisify } from 'miniprogram-api-promise';
 const wxp = {}
 // promisify all wx's api
 promisifyAll(wx, wxp)
-wxp.getSystemInfoSync()
+console.log(wxp.getSystemInfoSync())
 wxp.getSystemInfo().then(console.log)
 wxp.showModal().then(wxp.openSetting())
 
@@ -29,5 +29,5 @@ wxp.showModal().then(wxp.openSetting())
 wxp.getSystemInfo({success(res) {console.log(res)}})
 
 // promisify single api
-promisify(wx.getSystemInfo).then(console.log)
+promisify(wx.getSystemInfo)().then(console.log)
 ```
