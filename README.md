@@ -16,7 +16,7 @@ Call the method promisifyAll at the program entry (app.js), It only needs to be 
 
 💨example:
 ```
-import { promisifyAll, promisify } from 'wxa-promise';
+import { promisifyAll, promisify } from 'miniprogram-api-promise';
 
 const wxp = {}
 // promisify all wx's api
