@@ -1,4 +1,4 @@
-const { promisifyAll } = require('miniprogram-api-promise')
+const { promisifyAll, promisify } = require('miniprogram-api-promise')
 const app = getApp()
 const wxp = {}
 
