@@ -145,5 +145,6 @@ export const asyncMethods = [
   'reLaunch',
   'navigateTo',
   'switchTab',
-  'navigateBack'
+  'navigateBack',
+  'openBusinessView',
 ]
