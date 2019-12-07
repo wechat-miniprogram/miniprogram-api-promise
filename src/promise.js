@@ -11,7 +11,7 @@ function hasCallback(args) {
 }
 
 function _promisify(func) {
-  if (typeof func !== 'function') return fn
+  if (typeof func !== 'function') return func
   return (args = {}) =>
     new Promise((resolve, reject) => {
       func(
